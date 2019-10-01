@@ -1,9 +1,6 @@
 name: python_test
 
-on: 
-    push:
-      branch:
-        - master
+on: [push]
 jobs:
     python_tt:
     
