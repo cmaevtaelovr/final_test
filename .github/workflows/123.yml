@@ -1,0 +1,17 @@
+name: XD
+
+on: [push]
+
+jobs:
+      first_job:
+      runs-on: unbuntu-latest
+            
+     steps:
+     - uses: actions/checkout@v1
+     
+      -name: print HI
+       run: echo Hi
+      -name: print two lines
+       run: |
+        echo i am,
+        echo ruei ruei.
