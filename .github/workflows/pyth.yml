@@ -1,17 +1,16 @@
-name: CI
+name: CI_let's go
 
 on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: print (Hello, world!)
+      run: echo wow
     - name: Run a multi-line script
       run: |
-        print (Add other actions to build,)
-        print (test, and deploy your project.)
+        echo second gogogo,
+        echo thire yEAH
