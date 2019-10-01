@@ -1,0 +1,17 @@
+name : GitHub Actions Demo
+
+on: push
+
+jobs:
+  my-jobs:
+  name: My Job
+  runs-on: ubuntu-latest
+  steps:
+  - name: Print a greeting
+    env:
+      MY_VAR: Hi there! My name is
+      FIRST_NAME: ruei
+      MIDDLE_NAME: ruei
+      LAST_NAME: ruei
+    run:
+      echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME
